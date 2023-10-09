@@ -1,3 +1,5 @@
+
+
 from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.builtin import CommandStart
@@ -5,6 +7,7 @@ from aiogram.dispatcher.filters.builtin import CommandStart
 from keyboards.default.search_button import search_button_user
 from loader import dp, db, db1
 from states.User_state import user_state
+
 
 
 @dp.message_handler(CommandStart(), state=user_state.science)
@@ -27,3 +30,5 @@ async def bot_start(message: types.Message):
     except:
         await message.answer(f"<b>Salom {message.from_user.full_name}</b>\n\n"
                              f"<i>To'garakni qidirish usulini tanlang🤳</i>", reply_markup=search_button_user)
+
+

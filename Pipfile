@@ -6,7 +6,8 @@ name = "pypi"
 [packages]
 aiogram = "~=2.14"
 environs = "*"
-
+asyncpg = "*"
+gunicorn = "*"
 
 [dev-packages]
 
